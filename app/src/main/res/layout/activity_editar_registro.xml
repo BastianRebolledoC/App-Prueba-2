@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    tools:context=".editar_registro">
+
+    <TextView
+        android:id="@+id/txt_codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Codigo:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="15dp"
+        android:text="Sensor:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:text="Valor:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:text="Fecha:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:text="Hora:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_observacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:text="Observaciones"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_observacion"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Ingrese algunas observaciones"
+        android:inputType="text|textMultiLine" />
+
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#9bf6ff"
+        android:foregroundTint="@color/white"
+        android:onClick="volver"
+        android:text="@string/volver"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:iconGravity="textStart"
+        app:iconTint="@color/white" />
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#caffbf"
+        android:foregroundTint="@color/white"
+        android:onClick="Guardar"
+        android:text="Guardar"
+        app:icon="@android:drawable/ic_menu_save"
+        app:iconGravity="textStart"
+        app:iconTint="@color/white" />
+
+    <Button
+        android:id="@+id/btn_eliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#ffadad"
+        android:foregroundTint="@color/white"
+        android:onClick="eliminar"
+        android:text="Eliminar"
+        app:icon="@android:drawable/ic_menu_delete"
+        app:iconGravity="textStart"
+        app:iconTint="@color/white" />
+
+    <Button
+        android:id="@+id/btn_mapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#ffd6a5"
+        android:foregroundTint="@color/white"
+        android:onClick="Mapa"
+        android:text="Ver en mapa"
+        app:icon="@android:drawable/ic_menu_mapmode"
+        app:iconGravity="textStart"
+        app:iconTint="@color/white" />
+</LinearLayout>
